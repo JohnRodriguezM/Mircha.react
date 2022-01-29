@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+//
+import {Item} from './components/item'
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,12 @@ function App() {
         >
           Learn React
         </a>
+        <br />
+        <br /><br />
+        <Item
+          arreglo = {[1,2,3]}
+          funcion = {num => num*num}
+        />
       </header>
     </div>
   );

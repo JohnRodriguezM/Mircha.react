@@ -1,0 +1,43 @@
+clase #2 : create-react-app myapp
+
+{
+    comandos basicos:
+
+    - npm start : levanta un servidor local de desarrollo
+    - npm run build: es un servidor para produccion
+    - npm run test: para pruebas de testing con la libreria jest
+    - npm run eject: ejecta todo la configuaracion que capa sobre capa nos da inicialmente create-react-app
+}
+
+//
+¿QUE SON Y COMO FUNCIONAN LAS PROPS EN REACT?
+
+
+las props son valores que recibe un componente hijo de un componente padre. se agrupan en un objeto llamado PROPS, el cual puede recibir diferentes tipos de datos, como :
+
+Strings
+Numbers
+Booleans
+Arrays
+Objects
+Functions
+React Elements
+React Components
+
+OJOO!!! LAS PROPS SON INMUTABLES, son valores de solo lectura
+
+las props funcionan comoa atributos para jsx
+
+- creacion de propiedades por defecto en los componentes
+ej: 
+
+
+const Mycomponent = props => {
+    return(
+        <div>{props.primeraPorDefecto}</div>
+    )
+}
+
+Mycomponent.defaultProps = {
+    primeraPorDefecto : "soy una prop por defecto",
+}
