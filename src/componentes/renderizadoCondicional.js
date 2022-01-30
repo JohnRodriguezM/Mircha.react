@@ -38,5 +38,6 @@ export const RenderizadoCondicional = () => {
         : <Login 
         Logueado = {Logueado}
         setLogueado={setLogueado}  />}
+        <hr />
   </div>);
 };

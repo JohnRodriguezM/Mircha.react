@@ -3,6 +3,7 @@ import './App.css';
 
 // importacion de components
 import {RenderizadoCondicional} from './componentes/renderizadoCondicional'
+import {RenderizadoElementos} from './componentes/renderizadoElementos'
 
 
 
@@ -25,8 +26,7 @@ function App() {
       <RenderizadoCondicional/>
       <br />
       <br />
-      <br />
-      <br />
+      <RenderizadoElementos/>
       </header>
     </div>
   );
