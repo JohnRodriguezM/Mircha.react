@@ -1,3 +1,5 @@
+import React from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,13 +14,19 @@ import {ConsumoJson} from './componentes/consumoJson'
 
 
 
-
+import {Saludo} from './componentes/pruebaRenderizado'
 
 
 
 
 
 function App() {
+
+
+  /*estado de pruebaRenderizado (important) */
+  const [valor,setValor] = React.useState('')
+  const[logueado,setLogueado] = React.useState()
+  /**/
   return (
     <div className="App">
       <header className="App-header">
@@ -62,6 +70,17 @@ function App() {
           }
       </ConsumoJson>
       <br /><br /><hr />
+      {/* componente importante */}
+      <Saludo
+        logueado = {logueado}
+        setLogueado = {setLogueado}
+        valor = {valor}
+        setvalor = {setValor}
+      />
+      <br />
+      <br />
+      <br />
+      <br />
       </header>
     </div>
   );
