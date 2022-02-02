@@ -17,6 +17,9 @@ import {ConsumoJson} from './componentes/consumoJson'
 import {Saludo} from './componentes/pruebaRenderizado'
 
 
+// para el contador 
+import {Contador} from './componentes/contador'
+
 
 
 
@@ -27,6 +30,8 @@ function App() {
   const [valor,setValor] = React.useState('')
   const[logueado,setLogueado] = React.useState()
   /**/
+  // para el contador
+  const [valorContador,setValorContador] = React.useState(0)
   return (
     <div className="App">
       <header className="App-header">
@@ -81,6 +86,10 @@ function App() {
       <br />
       <br />
       <br />
+      <Contador 
+        valorContador={ valorContador }
+        setValorContador={setValorContador}
+      />
       </header>
     </div>
   );
