@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 
 // importacion de components
 import {RenderizadoCondicional} from './componentes/renderizadoCondicional'
@@ -19,6 +19,11 @@ import {Saludo} from './componentes/pruebaRenderizado'
 
 // para el contador 
 import {Contador} from './componentes/contador'
+
+
+// importacion realizada para el tema de eventos sinteticos, nativos y personalizados
+import {NativesinteticEvents,Button} from './componentes/native_and_sintetic_Events'
+
 
 
 
@@ -90,6 +95,13 @@ function App() {
         valorContador={ valorContador }
         setValorContador={setValorContador}
       />
+      <br />
+      <br />
+      <br />
+<NativesinteticEvents/>
+<br />
+<br />
+{/* <Button /> */}
       </header>
     </div>
   );
