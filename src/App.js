@@ -25,7 +25,8 @@ import {Contador} from './componentes/contador'
 import {NativesinteticEvents,Button} from './componentes/native_and_sintetic_Events'
 
 
-
+// se importan componentes para saber como se comunican los componentes
+import { Padre } from "./componentes/comunicacionComponentes";
 
 
 function App() {
@@ -102,7 +103,9 @@ function App() {
 <br />
 <br />
 {/* <Button /> */}
-      </header>
+<br /><br />
+<Padre/>
+</header>
     </div>
   );
 }

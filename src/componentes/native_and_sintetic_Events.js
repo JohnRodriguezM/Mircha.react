@@ -25,6 +25,7 @@ export const NativesinteticEvents = () => {
              console.log("buenas tardes mundo soy un evento personalizado que pasa a traves de una prop")
          }
      }/> 
+    {/* <Pruebita/>  */}
   </div>);
 };
 
@@ -32,12 +33,27 @@ export const NativesinteticEvents = () => {
 // que es un evento personalizado
 // creo un componente exclusivamente de un boton por ejemplo
 
-const Button = props => {
+const Button = ({eventoPersonalizado}) => {
     return (
-        <button onClick={props.eventoPersonalizado}>
+        <button onClick={eventoPersonalizado}>
             manejo de eventos personalizados en reactjs
         </button>
     )
 }
 
 export {Button}
+
+/* const Pruebita = props => {
+    function handleClick(e,mensaje) {
+        console.log("hola con handleClick");
+        console.log(mensaje);
+        console.log(e.target.value)
+    }
+    return (
+        <button onClick = {(e)=>{
+            handleClick(e,"holas")
+        }}>
+            clickme
+        </button>
+    )
+} */
