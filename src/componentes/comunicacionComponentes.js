@@ -22,6 +22,11 @@ a traves de :
 
 - una forma no tan usada son los portales ( nos permiten renderizar ciertas cosas o afectar elementos que no tenemos asignados en el dom real )
 
+Cuando la acción deja de servirte, reúne información; cuando la
+información deja de servirte, duerme..
+—Ursula K. Le Guin, La Mano Izquierda De La Oscuridad
+
+
 */
 
 

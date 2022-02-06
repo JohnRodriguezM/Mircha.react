@@ -28,9 +28,13 @@ import {NativesinteticEvents,Button} from './componentes/native_and_sintetic_Eve
 // se importan componentes para saber como se comunican los componentes
 import { Padre } from "./componentes/comunicacionComponentes";
 
+// cilo de vida de los componentes
+import {ClicloDeVidaComponentes} from "./componentes-desdeClase13/clicloDeVidaComponentes"
+
 
 function App() {
-
+  // estado para el componente ciclo de vida
+  const [hora,setHora] = React.useState(new Date().toLocaleTimeString())
 
   /*estado de pruebaRenderizado (important) */
   const [valor,setValor] = React.useState('')
@@ -105,6 +109,11 @@ function App() {
 {/* <Button /> */}
 <br /><br />
 <Padre/>
+<br /><br />
+<ClicloDeVidaComponentes
+  hora = {hora}
+  setHora = {setHora}
+/>
 </header>
     </div>
   );
