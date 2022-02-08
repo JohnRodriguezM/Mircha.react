@@ -30,7 +30,9 @@ información deja de servirte, duerme..
 */
 
 
-
+const sisoty = () =>{
+    console.log("jaja");
+}
 const Padre = () => {
     let mensajeIncial = "buenas tardes, pero si estas leyendo esto por la noche"
     const [informacion, setInformacion] = React.useState(mensajeIncial);
